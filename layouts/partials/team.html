@@ -58,12 +58,14 @@
         <h2 class="section-heading">{{ with .Site.Params.team.speakers }}{{ . | markdownify }}{{ end }}</h2>
       </div>
     </div>
-    <div class="row">
-      <ul>
+    <div class="row flexbox{{ if .Site.Params.team.center }} flexbox-center{{ end }}">
         {{ range .Site.Data.speakers }}
-          <li>{{ . }}</li>
+        <div class="col-sm-4 col">
+            <div class="team-member">
+              <h3>{{ .name | markdownify }}</h3>
+            </div>
+          </div>
         {{ end }}
-      </ul>
     </div>
   </div>
 </section>
