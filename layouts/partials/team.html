@@ -58,5 +58,12 @@
         <h2 class="section-heading">{{ with .Site.Params.team.speakers }}{{ . | markdownify }}{{ end }}</h2>
       </div>
     </div>
+    <div class="row">
+      <ul>
+        {{ range .Site.Data.speakers }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
   </div>
 </section>
