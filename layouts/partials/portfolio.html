@@ -1,5 +1,7 @@
 {{ "<!-- Portfolio Grid Section -->" | safeHTML }}
-<section id="portfolio">
+<section id="portfolio" {{ if .Site.Params.callforpapers.bg }}
+class="bg-light-gray"
+{{ end }}>
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
