@@ -548,27 +548,39 @@ header .intro-text .intro-heading {
     text-transform: none;
 }
 
-    header {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #2165B6;
-        background-position: bottom right;
-    }
+header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2165B6;
+    background-position: bottom right;
+}
 
-    header .intro-text .intro-lead-in {
-        font-size: 3.2rem;
-        font-style: normal;
-        text-align: left;
-    }
-    header .intro-text {
-        text-align: left;
-    }
-    header .intro-text .intro-heading {
-        text-transform: none;
-        font-size: 5rem;
-        line-height: 1.2;
-        text-align: left;
-    }
+header .intro-text .intro-lead-in {
+    font-size: 3.2rem;
+    font-style: normal;
+    text-align: left;
+}
+
+header .intro-text {
+    text-align: left;
+    z-index: 10;
+    position: relative;
+}
+
+header .intro-text .intro-heading {
+    text-transform: none;
+    font-size: 5rem;
+    line-height: 1.2;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+}
+
+canvas {
+    position:absolute;
+    top:0;
+    left:0;   
+}
 
 @media(max-width: 1024px) {
     header {
