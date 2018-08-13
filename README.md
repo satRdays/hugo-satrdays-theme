@@ -10,16 +10,17 @@ This is a theme repository for satRday conference websites using the hugo static
 2. Start a new site
     ```
     hugo new site [city][year] # such as cardiff2018
+    
+    cd [city][year]
+    
+    git init
     ```
 3. Install `hugo-agency-theme` as a submodule
     ```
-    cd [city][year]
-    git init
     git submodule add https://github.com/digitalcraftsman/hugo-agency-theme themes/hugo-agency-theme
     ```
 4. Install `hugo-satrday-theme` as a submodule
     ```
-    git init
     git submodule add https://github.com/satRdays/hugo-satrdays-theme themes/hugo-satrday-theme
     ```
 5. modify your sites `config.toml` to include
