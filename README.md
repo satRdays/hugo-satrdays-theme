@@ -9,11 +9,11 @@ This is a theme repository for satRday conference websites using the hugo static
     * [Install Hugo](https://gohugo.io/getting-started/installing/)
 2. Start a new site
     ```
-    hugo new site quickstart
+    hugo new site [city][year] # such as cardiff2018
     ```
 3. Install `hugo-agency-theme` as a submodule
     ```
-    cd quickstart
+    cd [city][year]
     git init
     git submodule add https://github.com/digitalcraftsman/hugo-agency-theme themes/hugo-agency-theme
     ```
