@@ -21,7 +21,7 @@ This is a theme repository for satRday conference websites using the hugo static
     ```
 4. Install `hugo-satrday-theme` as a submodule
     ```
-    git submodule add https://github.com/satRdays/hugo-satrdays-theme themes/hugo-satrday-theme
+    git submodule add https://github.com/satRdays/hugo-satrdays-theme themes/hugo-satrdays-theme
     ```
 5. modify your sites `config.toml` to include
 
