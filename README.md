@@ -23,8 +23,14 @@ This is a theme repository for satRday conference websites using the hugo static
     ```
     git submodule add https://github.com/satRdays/hugo-satrdays-theme themes/hugo-satrdays-theme
     ```
-5. modify your sites `config.toml` to include
+5. copy the `config.toml` [from thie site](https://github.com/satRdays/satRday_site_template/blob/master/config.toml) into your projects root (i.e. `/cardiff2018/config.toml`)
 
-    ```
-    theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
-    ```
+6. copy the files in `hugo-satrdays-theme/data/projects/` into `[city][year]/data/projects/` e.g. `/cardiff2018/data/projects/`
+
+7. check if the site builds
+   ```
+   hugo serve
+   ```
+   go to the port listed in the return to see your site e.g. `localhost:xxxx`, probably `localhost:1313`
+   
+8. modify the params in the `config.toml` 
