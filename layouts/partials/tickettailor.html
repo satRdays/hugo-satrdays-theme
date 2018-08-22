@@ -1,0 +1,28 @@
+{{ "<!-- eventbrite -->" | safeHTML }}
+<section id="tickettailor" {{ if .Site.Params.tickettailor.bg }}
+class="bg-light-gray"
+{{ end }}>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.tickettailor.title }}{{ . | markdownify }}{{ end }}</h2>
+      </div>
+    </div>
+  <div style="width:100%; text-align:left;">
+  <!-- Ticket Tailor Widget. Paste this in to your website where you want the widget to appear. Do no change the code or the widget may not work properly. -->
+  <div class="tt-widget">
+    <div class="tt-widget-fallback">
+      <p>
+        <a href="https://www.tickettailor.com/new-order/{{ .Site.Params.tickettailor.eventviewid }}/8b83/ref/website_widget/" target="_blank">Click here to buy tickets</a>
+        <br />
+        <small>
+          <a href="http://www.tickettailor.com?rf=wdg" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a>
+        </small>
+      </p>
+    </div>
+    <script src="https://dc161a0a89fedd6639c9-03787a0970cd749432e2a6d3b34c55df.ssl.cf3.rackcdn.com/tt-widget.js" data-url="https://www.tickettailor.com/new-order/{{ .Site.Params.tickettailor.eventviewid }}/8b83/ref/website_widget/"
+      data-type="inline" data-inline-minimal="false" data-inline-show-logo="true" data-inline-bg-fill="true"></script>
+  </div>
+  <!-- End of Ticket Tailor Widget -->
+  </div>
+</section>

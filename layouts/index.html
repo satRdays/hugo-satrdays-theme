@@ -15,6 +15,10 @@
       {{ partial "eventbrite.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.tickettailor.enable }}
+    {{ partial "tickettailor.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.callforpapers.enable }}
       {{ partial "callforpapers.html" . }}
     {{ end }}
