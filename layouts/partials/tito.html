@@ -1,0 +1,17 @@
+{{ "<!-- tito -->" | safeHTML }}
+<section id="tito" {{ if .Site.Params.tito.bg }}
+class="bg-light-gray"
+{{ end }}>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.tito.title }}{{ . | markdownify }}{{ end }}</h2>
+      </div>
+    </div>
+    <div>
+      <script src='https://js.tito.io/v1' async></script>
+      <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+      <tito-widget event={{ .Site.Params.tito.accountevent }}></tito-widget>
+    </div>
+  </div>
+</section>

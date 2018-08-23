@@ -11,6 +11,10 @@
       {{ partial "services.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.tito.enable }}
+    {{ partial "tito.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.eventbrite.enable }}
       {{ partial "eventbrite.html" . }}
     {{ end }}
