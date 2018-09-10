@@ -142,15 +142,15 @@ function getImg () {
   var ratio = vp.ratio;
   var width = vp.width;
   if (width > 1080) {
-    return 'img/cardiff-uni.jpg';
+    return 'img/header-bg.jpg';
   } else if (width > 720 && ratio > 1) {
-    return 'img/cardiff-uni.jpg';
+    return 'img/header-bg.jpg';
   } else if (width > 720 && ratio == 1) {
-    return 'img/cardiff-uni.jpg';
+    return 'img/header-bg.jpg';
   } else if (ratio > 1) {
-    return 'img/cardiff-uni.jpg';
+    return 'img/header-bg.jpg';
   } else {
-    return 'img/cardiff-uni.jpg';
+    return 'img/header-bg.jpg';
   }
 }
 
