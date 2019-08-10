@@ -111,6 +111,16 @@ fieldset[disabled] .btn-xl.active {
 .btn-xl .badge {
     color: #2165B6;
 }
+.btn-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 
 .navbar-default .navbar-brand {
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, cursive;
