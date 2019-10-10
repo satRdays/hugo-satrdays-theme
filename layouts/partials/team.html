@@ -66,9 +66,7 @@ class="bg-light-gray"
             <div class="team-member">
                 {{ $url := printf "img/team/%s" .img }}
                 <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
-              {{ with .name }} 
               <h3>{{ . | markdownify }}</h3>
-              {{ end }} 
               
               {{ with .organisation }}
               <h4>{{ . | markdownify }}</h4>
