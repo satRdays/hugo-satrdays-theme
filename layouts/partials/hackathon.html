@@ -20,8 +20,8 @@ class="bg-light-gray"
           {{ with .Site.Params.hackathon.location}}<li>{{ . | markdownify}}</li>{{ end }}
           {{ with .Site.Params.hackathon.dates }}<li>{{ . | markdownify}}</li>{{ end }}
           {{ with .Site.Params.hackathon.times}}<li>{{ . | markdownify}}</li>{{ end }}
-          {{ with .Site.Params.hackathon.website_name}}<li><a href="www.yahoo.com">{{ .}}</a></li>{{ end }} 
-        </ul>  
+          {{ with .Site.Params.hackathon.website_name}}<li><a href="www.yahoo.com">{{ .}}</a></li>{{ end }}
+        </ul>
           {{ with .Site.Params.hackathon.brief2 }}{{ . | markdownify}}{{ end }}
         </p>
     </div>

@@ -53,9 +53,11 @@
   {{ partial "team.html" . }}
   {{ end }}
 
-  {{ if .Site.Params.diversity.enable }}
-  {{ partial "diversity.html" . }}
-  {{ end }}
+    {{ partial "hackathon.html" . }}
+
+    {{ if .Site.Params.team.enable }}
+      {{ partial "team.html" . }}
+    {{ end }}
 
   {{ if .Site.Params.clients_list.enable }}
   {{ partial "clients.html" . }}
