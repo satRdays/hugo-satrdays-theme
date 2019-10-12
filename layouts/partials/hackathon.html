@@ -15,7 +15,12 @@ class="bg-light-gray"
     </div>
     <div>
         <p>We will explore a unique dataset collated by Anna-Jayne Metcalfe for the <a href= "https://tdor.translivesmatter.info/" > TDOR  </a> website. 
-        The event will take place at {{.Site.Params.hackathon.location}} on {{ .Site.Params.hackathon.dates }} at {{.Site.Params.hackathon.times}}. The event will involve activities suitable for all levels and backgrounds so feel free to come along. Click <a href= "https://www.meetup.com/Cardiff-R-User-Group/events/256116362/" > here  </a> for further info.
+        <ul>
+          <li>{{.Site.Params.hackathon.location}}</li>
+          <li>{{ .Site.Params.hackathon.dates }}</li>
+          <li>{{.Site.Params.hackathon.times}}</li>
+        </ul>  
+          The event will involve activities suitable for all levels and backgrounds so feel free to come along. Click <a href= "https://www.meetup.com/Cardiff-R-User-Group/events/256116362/" > here  </a> for further info.
         </p>
     </div>
 </section>
