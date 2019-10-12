@@ -43,6 +43,8 @@
       {{ partial "location.html" . }}
     {{ end }}
 
+    {{ partial "hackathon.html" . }}
+
     {{ if .Site.Params.team.enable }}
       {{ partial "team.html" . }}
     {{ end }}
