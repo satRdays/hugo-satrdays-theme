@@ -53,11 +53,13 @@
   {{ partial "team.html" . }}
   {{ end }}
 
-    {{ partial "hackathon.html" . }}
+  {{ if .Site.Params.team.enable }}
+  {{ partial "team.html" . }}
+  {{ end }}
 
-    {{ if .Site.Params.team.enable }}
-      {{ partial "team.html" . }}
-    {{ end }}
+  {{ if .Site.Params.diversity.enable }}
+  {{ partial "diversity.html" . }}
+  {{ end }}
 
   {{ if .Site.Params.clients_list.enable }}
   {{ partial "clients.html" . }}
@@ -78,4 +80,8 @@
   {{ partial "js.html" . }}
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 8ae97e6... include hackathon section
