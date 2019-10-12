@@ -1,0 +1,28 @@
+{{ "<!-- hackathon -->" | safeHTML }}
+<section id="hackathon" {{ if .Site.Params.hackathon.bg }}
+class="bg-light-gray"
+{{ end }}>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.hackathon.title }}{{ . | markdownify }}{{ end }}</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 text-center">
+        <h4 class="section-heading">
+            {{ with .Site.Params.hackathon.subtitle }}{{ . | markdownify }}{{ end }}
+        </h4>
+    </div>
+    <div>
+        <p>
+          {{ with .Site.Params.hackathon.brief1 }}{{ . | markdownify}}{{ end }}
+        <ul>
+          {{ with .Site.Params.hackathon.location}}<li>{{ . | markdownify}}</li>{{ end }}
+          {{ with .Site.Params.hackathon.dates }}<li>{{ . | markdownify}}</li>{{ end }}
+          {{ with .Site.Params.hackathon.times}}<li>{{ . | markdownify}}</li>{{ end }}
+          {{ with .Site.Params.hackathon.website_name}}<li><a href="www.yahoo.com">{{ .}}</a></li>{{ end }} 
+        </ul>  
+          {{ with .Site.Params.hackathon.brief2 }}{{ . | markdownify}}{{ end }}
+        </p>
+    </div>
+</section>
