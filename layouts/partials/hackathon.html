@@ -10,7 +10,7 @@ class="bg-light-gray"
     </div>
     <div class="col-lg-12 text-center">
         <h4 class="section-heading">
-            Exploring Transgender Day of Remembrance Data   
+            {{ with .Site.Params.hackathon.subtitle }}{{ . | markdownify }}{{ end }}
         </h4>
     </div>
     <div>
