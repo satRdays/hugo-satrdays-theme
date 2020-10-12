@@ -16,6 +16,7 @@ class="bg-light-gray"
           <p>{{ .endsAt }} </p>
         </div>
         <h4 class="ScheduleItem-title">{{ .title | markdownify }}</h4>
+        <p> {{ partial "tweetthis.html" . }} </p>
       </div>
       {{ end }}
     </div>
