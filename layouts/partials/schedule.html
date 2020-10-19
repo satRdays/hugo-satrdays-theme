@@ -9,7 +9,7 @@ class="bg-light-gray"
       </div>
     </div>
     <div class="Schedule">
-      {{ range sort .Site.Data.projects "startsAt" "asc" }}
+      {{ range sort .Site.Data.schedule.talk_details ".startsAt" "asc" }}
       <div class="ScheduleItem {{ if ne .talk true }}ScheduleItem--service{{ end }}">
         <div class="ScheduleItem-time">
           <p>{{ .startsAt }}</p>

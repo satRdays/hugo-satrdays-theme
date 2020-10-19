@@ -61,13 +61,13 @@ class="bg-light-gray"
       </div>
     </div>
     <div class="row flexbox{{ if .Site.Params.team.center }} flexbox-center{{ end }}">
-        {{ range .Site.Data.speakers }}
+        {{ range .Site.Data.schedule.speaker }}
         <div class="col-sm-4 col">
             <div class="team-member">
                 {{ $url := printf "img/team/%s" .img }}
                 <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
               <h3>{{ .name | markdownify }}</h3>
-              
+
               {{ with .organisation }}
               <h4>{{ . | markdownify }}</h4>
               {{ end }}

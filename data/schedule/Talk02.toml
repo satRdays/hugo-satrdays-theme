@@ -1,0 +1,26 @@
+modalID= 2
+
+[talk_details]
+title= "Second Talk"
+subtitle= "second Subtitle"
+date= 1970-01-01
+startsAt= 00:01:00
+endsAt= 00:02:00
+img= "roundicons.png"
+preview = "faceholder.png"
+category= "Category 1"
+description= "Describe 1"
+talk = true
+
+[speaker]
+name = "Speaker Name 02"
+organisation = "Company 2"
+role = "Role 1"
+img = "faceholder.png"
+social = [
+        ["fa-twitter", "#"],
+        ["fa-github", "#"],
+        ["fa-linkedin", "#"],
+        ["fa-globe", "#"]
+      ]
+link= "#"

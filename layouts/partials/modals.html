@@ -1,5 +1,5 @@
 {{ "<!-- Portfolio Modals -->" | safeHTML }}
-{{ range .Site.Data.projects }}
+{{ range .Site.Data.schedule.talk_details }}
 {{ if eq .talk true }}
   <div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">

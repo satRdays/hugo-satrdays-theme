@@ -10,7 +10,7 @@ class="bg-light-gray"
       </div>
     </div>
     <div class="Talks">
-      {{ range .Site.Data.projects}}
+      {{ range .Site.Data.schedule.talk_details}}
       {{ if eq .talk true }}
       <a href="#portfolioModal{{ .modalID }}" class="Talk" data-toggle="modal">
         <img src="img/portfolio/{{ .preview }}" class="Talk-image" alt="">
