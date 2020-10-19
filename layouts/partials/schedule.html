@@ -9,13 +9,13 @@ class="bg-light-gray"
       </div>
     </div>
     <div class="Schedule">
-      {{ range sort .Site.Data.schedule.talk_details ".startsAt" "asc" }}
-      <div class="ScheduleItem {{ if ne .talk true }}ScheduleItem--service{{ end }}">
+      {{ range sort .Site.Data.schedule ".talk_details.startsAt" "asc" }}
+      <div class="ScheduleItem {{ if ne .talk_details.talk true }}ScheduleItem--service{{ end }}">
         <div class="ScheduleItem-time">
-          <p>{{ .startsAt }}</p>
-          <p>{{ .endsAt }} </p>
+          <p>{{ .talk_details.startsAt }}</p>
+          <p>{{ .talk_details.endsAt }} </p>
         </div>
-        <h4 class="ScheduleItem-title">{{ .title | markdownify }}</h4>
+        <h4 class="ScheduleItem-title">{{ .talk_details.title | markdownify }}</h4>
         <p> {{ partial "tweetthis.html" . }} </p>
       </div>
       {{ end }}
