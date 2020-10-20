@@ -1,0 +1,22 @@
+Images: mic, submission.jpg and tickets.jpg
+
+# tickets.jpg
+link = "https://www.flickr.com/photos/43526506@N02/4339439025/"
+Creator= Vanessa Lynn
+Via= Flickr
+Licence= Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0)
+Licence_link = "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+
+# submission.jpg
+link="https://www.flickr.com/photos/55455788@N00/16985621338/"
+Creator= Lee Bennett
+Via= Flickr
+Licence= Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0)
+Licence_link = "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+
+# mic.jpg
+link="https://www.flickr.com/photos/62735724@N02/32755687435/"
+Creator= Mike Grauer
+Via= Flickr
+Licence= Attribution 2.0 Generic (CC BY 2.0)
+Licence_link = "https://creativecommons.org/licenses/by/2.0/"
