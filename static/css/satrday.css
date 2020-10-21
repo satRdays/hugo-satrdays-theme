@@ -9,6 +9,7 @@ header {
     border-color: transparent;
     background-color: white;
     padding: 5px;
+    transition: background 0.34s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -124,6 +125,14 @@ fieldset[disabled] .btn-xl.active {
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, cursive;
     color: #2165B6;
     text-transform: uppercase;
+}
+
+.navbar-nav>li:empty {
+   display: none;
+}
+
+.navbar-default .nav li a:empty {
+   display: none;
 }
 
 .navbar-default .navbar-toggle {
