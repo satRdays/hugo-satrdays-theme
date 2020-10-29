@@ -61,28 +61,28 @@ class="bg-light-gray"
       </div>
     </div>
     <div class="row flexbox{{ if .Site.Params.team.center }} flexbox-center{{ end }}">
-        {{ range .Site.Data.speakers }}
+        {{ range .Site.Data.schedule }}
         <div class="col-sm-4 col">
             <div class="team-member">
-                {{ $url := printf "img/team/%s" .img }}
+                {{ $url := printf "img/team/%s" .speaker.img }}
                 <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
-              <h3>{{ .name | markdownify }}</h3>
-              
-              {{ with .organisation }}
+              <h3>{{ .speaker.name | markdownify }}</h3>
+
+              {{ with .speaker.organisation }}
               <h4>{{ . | markdownify }}</h4>
               {{ end }}
 
-              {{ with .role }}
+              {{ with .speaker.role }}
               <h5 class="report">{{ . | markdownify }}</h5>
               {{ end }}
 
               <ul class="list-inline social-buttons">
-                {{ range .social }}
+                {{ range .speaker.social }}
                   <li><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a></li>
                 {{ end }}
               </ul>
 
-              {{ with .bio }}
+              {{ with .speaker.bio }}
               <p class="team-bio">{{ . | markdownify }}</p>
             {{ end }}
             </div>

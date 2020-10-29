@@ -10,13 +10,13 @@ class="bg-light-gray"
       </div>
     </div>
     <div class="Talks">
-      {{ range .Site.Data.projects}}
-      {{ if eq .talk true }}
-      <a href="#portfolioModal{{ .modalID }}" class="Talk" data-toggle="modal">
-        <img src="img/portfolio/{{ .preview }}" class="Talk-image" alt="">
+      {{ range .Site.Data.schedule}}
+      {{ if eq .talk_details.talk true }}
+      <a href="#portfolioModal{{ .talk_details.modalID }}" class="Talk" data-toggle="modal">
+        <img src="img/portfolio/{{ .talk_details.preview }}" class="Talk-image" alt="">
         <div class="Talk-title">
-          <h4>{{ .title | markdownify }}</h4>
-          <p class="text-muted">{{ .client | markdownify }}</p>
+          <h4>{{ .talk_details.title | markdownify }}</h4>
+          <p class="text-muted">{{ .speaker.name | markdownify }}</p>
         </div>
       </a>
       {{ end }}
