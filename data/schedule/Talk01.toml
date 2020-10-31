@@ -17,6 +17,7 @@ name = "Speaker Name 01"
 organisation = "Company 1"
 role = "Role 1"
 img = "faceholder.png"
+bio = "Speaker Name 02 did stuff"
 social = [
         ["fa-twitter", "#"],
         ["fa-github", "#"],
