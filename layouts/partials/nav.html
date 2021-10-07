@@ -35,12 +35,6 @@
           </li>
         {{ end }}
 
-        {{ if .Site.Params.eventbrite.enable }}
-          <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#eventbrite">{{ with .Site.Params.navigation.eventbrite }}{{ . }}{{ end }}</a>
-          </li>
-        {{ end }}
-
         {{ if .Site.Params.services.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.navigation.services }}{{ . }}{{ end }}</a>
@@ -49,7 +43,7 @@
 
         {{ if or (.Site.Params.eventbrite.enable) (.Site.Params.tickettailor.enable) (.Site.Params.tito.enable)}}
           <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#registration">{{ with .Site.Params.navigation.eventbrite }}{{ . }}{{ end }}</a>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#registration">Registration</a>
           </li>
         {{ end }}
 
