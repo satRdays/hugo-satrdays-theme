@@ -1084,9 +1084,10 @@ fieldset[disabled] .btn-xl.active {
 .btn-twitter {
   background: #2165B6;
   color: white;
-  width: 20px;
+  width: 20rem;
+  padding: 0.3rem;
   text-align: center;
-  border-radius: 12%;
+  border-radius: 0.5rem;
 }
 
 .navbar-default .navbar-brand {
