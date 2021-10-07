@@ -47,6 +47,12 @@
           </li>
         {{ end }}
 
+        {{ if or (.Site.Params.eventbrite.enable) (.Site.Params.tickettailor.enable) (.Site.Params.tito.enable)}}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#registration">{{ with .Site.Params.navigation.eventbrite }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
         {{ if .Site.Params.portfolio.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
