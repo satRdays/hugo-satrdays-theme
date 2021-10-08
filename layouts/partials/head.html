@@ -8,8 +8,10 @@
   <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
   {{ "<!-- Stylesheets -->" | safeHTML }}
   <link href="{{ "css/bootstrap-v3.3.7/bootstrap.min.css" | absURL }}" rel="stylesheet">
-  <link href="{{ "css/satrday.css" | absURL }}" rel="stylesheet">
   <link href="{{ "css/jquery.form-validator-v2.3.44/theme-default.min.css" | absURL }}" rel="stylesheet">
+
+  {{ $style := resources.Get "satrday.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 
   {{ range .Site.Params.custom_css }}
     <link rel="stylesheet" href="{{ . | absURL }}">
