@@ -21,7 +21,7 @@ This is a theme repository for satRday conference websites using the hugo static
     ```
 4. copy the `config.toml` [from this site](https://github.com/satRdays/satRday_site_template/blob/master/config.toml) into your projects root (i.e. `/cardiff2018/config.toml`)
 
-5. copy the files in `hugo-satrdays-theme/data/projects/` into `[city][year]/data/projects/` e.g. `/cardiff2018/data/projects/`
+5. copy the files in `hugo-satrdays-theme/data/projects/` into `[city][year]/data/schedule/` e.g. `/cardiff2018/data/schedule/`
 
 6. check if the site builds
    ```
