@@ -14,7 +14,7 @@ class="bg-light-gray"
         <div class="col-sm-4 col">
           <div class="team-member">
             {{ $url := printf "img/team/%s" .img }}
-            <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
+            <img src="{{ $url | absURL }}" class="img-fluid rounded-circle" alt="{{ .name }}">
             <h3>{{ .name | markdownify }}</h3>
 
             {{ with .position }}
@@ -38,7 +38,7 @@ class="bg-light-gray"
 
             <ul class="list-inline social-buttons">
               {{ range .social }}
-                <li><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a></li>
+                <li class="list-inline-item"><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a></li>
               {{ end }}
             </ul>
 
@@ -65,7 +65,7 @@ class="bg-light-gray"
         <div class="col-sm-4 col">
             <div class="team-member">
                 {{ $url := printf "img/team/%s" .speaker.img }}
-                <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
+                <img src="{{ $url | absURL }}" class="img-fluid rounded-circle" alt="{{ .name }}">
               <h3>{{ .speaker.name | markdownify }}</h3>
 
               {{ with .speaker.organisation }}
@@ -78,7 +78,7 @@ class="bg-light-gray"
 
               <ul class="list-inline social-buttons">
                 {{ range .speaker.social }}
-                  <li><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a></li>
+                  <li class="list-inline-item"><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a></li>
                 {{ end }}
               </ul>
 

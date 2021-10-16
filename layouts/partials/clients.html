@@ -13,10 +13,10 @@
           {{ $url := printf "img/logos/%s" .logo }}
           {{ if .link }}
             <a href="{{ .link }}">
-              <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="">
+              <img src="{{ $url | absURL }}" class="img-fluid img-centered" alt="">
             </a>
           {{ else }}
-            <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="">
+            <img src="{{ $url | absURL }}" class="img-fluid img-centered" alt="">
           {{ end }}
         </div>
       {{ end }}

@@ -16,7 +16,7 @@
           <div class="modal-body">
             <h2>{{ .talk_details.title  | markdownify }}</h2>
             <p class="item-intro text-muted">{{ .talk_details.subtitle | markdownify }}</p>
-            <img class="img-responsive img-centered" src="img/portfolio/{{ .talk_details.img }}" alt="">
+            <img class="img-fluid img-centered" src="img/portfolio/{{ .talk_details.img }}" alt="">
             <p>{{ .talk_details.description | markdownify }}</p>
             <ul class="list-inline">
               <li> {{ .speaker.organisation | markdownify}} </li>

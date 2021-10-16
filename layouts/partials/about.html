@@ -15,7 +15,7 @@
             <li {{ if (not (modBool $i 2)) }}class="timeline-inverted" {{ end }}>
               <div class="timeline-image">
                 {{ $url := printf "img/about/%s" .img }}
-                <img class="img-circle img-responsive" src="{{ $url | absURL }}" alt="">
+                <img class="rounded-circle img-fluid" src="{{ $url | absURL }}" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
