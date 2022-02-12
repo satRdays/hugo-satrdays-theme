@@ -1,0 +1,15 @@
+name = "Satrdays"
+license = "Apache License 2.0"
+licenselink = "//github.com/satRdays/hugo-satrdays-theme/blob/main/LICENSE.md"
+description = "A one page design for running a satRdays conference"
+homepage = "//github.com/satRdays/hugo-satrdays-theme"
+tags = ["conference", "event"]
+min_version = 0.15
+
+[author]
+  name = "SatRdays"
+  homepage = "https://satrdays.org/"
+
+[original]
+  name = "digitalcraftsman"
+  homepage = "//github.com/digitalcraftsman"
