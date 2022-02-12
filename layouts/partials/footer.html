@@ -10,7 +10,7 @@
         <ul class="list-inline social-buttons">
 
           {{ range .Site.Params.footer.social }}
-            <li><a href="{{ .link }}" title="{{ .title }}"><i class="fa {{ .icon }}"></i></a></li>
+            <li class="list-inline-item"><a href="{{ .link }}" title="{{ .title }}"><i class="fa {{ .icon }}"></i></a></li>
           {{ end }}
 
         </ul>
@@ -27,7 +27,3 @@
     </div>
   </div>
 </footer>
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
